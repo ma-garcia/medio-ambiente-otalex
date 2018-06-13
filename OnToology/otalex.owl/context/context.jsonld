@@ -1,0 +1,485 @@
+{
+  "@context" : {
+    "SolonchakGleico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#SolonchakGleico"
+    },
+    "valorMaximoDeTempEnC" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMaximoDeTempEnC",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "LuvisolVertico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolVertico"
+    },
+    "Rio" : {
+      "@id" : "http://geo.linkeddata.es/ontology/Rio"
+    },
+    "superficieM2" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#superficieM2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "UmbrisolArenico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#UmbrisolArenico"
+    },
+    "RegosolEutrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RegosolEutrico"
+    },
+    "clasificacionCorine" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#clasificacionCorine"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "RedNatura2000Aves" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RedNatura2000Aves"
+    },
+    "LuvisolHaplico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolHaplico"
+    },
+    "TemperaturaMediaAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#TemperaturaMediaAnual"
+    },
+    "superficieHectareas" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#superficieHectareas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RioPrincipal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RioPrincipal"
+    },
+    "consumoEnergia2008EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2008EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "CambisolCalcarico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CambisolCalcarico"
+    },
+    "Mixta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Mixta"
+    },
+    "Suelo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Suelo"
+    },
+    "Pasto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Pasto"
+    },
+    "SistemaAgroSilvoPastoril" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#SistemaAgroSilvoPastoril"
+    },
+    "codigoMunicipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#codigoMunicipio"
+    },
+    "caracteristicaSituadaEnProvinciaConCodigo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#caracteristicaSituadaEnProvinciaConCodigo"
+    },
+    "ETPInvierno" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ETPInvierno"
+    },
+    "valorDeIndiceEnKgPorHab" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorDeIndiceEnKgPorHab",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "IndiceOmbrotermico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceOmbrotermico"
+    },
+    "CultivoPermanente" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CultivoPermanente"
+    },
+    "FerrocarrilViaSimple" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#FerrocarrilViaSimple"
+    },
+    "FluvisolCalcarico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#FluvisolCalcarico"
+    },
+    "consumoEnergia2002EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2002EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "valorMaximoEnMM" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMaximoEnMM",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "ParqueNacional" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ParqueNacional"
+    },
+    "Evapotranspiracion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Evapotranspiracion"
+    },
+    "ETPAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ETPAnual"
+    },
+    "LaminaDeAgua" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LaminaDeAgua"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "PlutonicaEIgnea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PlutonicaEIgnea"
+    },
+    "CambisolCromico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CambisolCromico"
+    },
+    "publicadoEn" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#publicadoEn"
+    },
+    "Caracteristica" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Caracteristica"
+    },
+    "valorMinimoDeIndice" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMinimoDeIndice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RegosolDistrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RegosolDistrico"
+    },
+    "MonumentoNatural" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#MonumentoNatural"
+    },
+    "PlanosolEutrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PlanosolEutrico"
+    },
+    "consumoAgua2009EnM3PorHab" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoAgua2009EnM3PorHab",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RedNatura2000Habitats" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RedNatura2000Habitats"
+    },
+    "Municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Municipio"
+    },
+    "abreviacionSuelo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#abreviacionSuelo"
+    },
+    "FluvisolEutrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#FluvisolEutrico"
+    },
+    "BosqueFrondoso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#BosqueFrondoso"
+    },
+    "PaisajeProtegido" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PaisajeProtegido"
+    },
+    "consumoEnergia2010EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2010EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Cuarcita" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Cuarcita"
+    },
+    "CambisolDistrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CambisolDistrico"
+    },
+    "ETPVerano" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ETPVerano"
+    },
+    "superficie" : {
+      "@id" : "http://geo.linkeddata.es/ontology/superficie"
+    },
+    "FerrocarrilViaDoble" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#FerrocarrilViaDoble"
+    },
+    "codigoCaracteristica" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#codigoCaracteristica"
+    },
+    "Via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Via"
+    },
+    "CambisolEutrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CambisolEutrico"
+    },
+    "PrecipitacionMaxima24Horas" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PrecipitacionMaxima24Horas"
+    },
+    "LeptosolHaplico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LeptosolHaplico"
+    },
+    "LeptosolDistrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LeptosolDistrico"
+    },
+    "ConsumoAgua" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ConsumoAgua"
+    },
+    "ConsumoEnergia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ConsumoEnergia"
+    },
+    "ViaDesdoblada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ViaDesdoblada"
+    },
+    "Planicie" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Planicie"
+    },
+    "Duna" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Duna"
+    },
+    "valorMaximoDeIndice" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMaximoDeIndice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "UnidadLocalPaisaje" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#UnidadLocalPaisaje"
+    },
+    "RelieveAbrupto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RelieveAbrupto"
+    },
+    "UnidadPaisaje" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#UnidadPaisaje"
+    },
+    "Arbusto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Arbusto"
+    },
+    "consumoEnergia2005EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2005EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "CambisolMollico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CambisolMollico"
+    },
+    "AgricolaHeterogenea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AgricolaHeterogenea"
+    },
+    "LuvisolFerrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolFerrico"
+    },
+    "IndiceAridez" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceAridez"
+    },
+    "IndiceRecogidaPlastico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceRecogidaPlastico"
+    },
+    "LuvisolCalcico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolCalcico"
+    },
+    "consumoEnergia2004EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2004EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RioSecundario" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#RioSecundario"
+    },
+    "consumoEnergia2009EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2009EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "consumoEnergia2001EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2001EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "DominioCosteroYLitoral" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#DominioCosteroYLitoral"
+    },
+    "TemperaturaMaximaAbsoluta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#TemperaturaMaximaAbsoluta"
+    },
+    "AmplitudTermicaAbsoluta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AmplitudTermicaAbsoluta"
+    },
+    "valorMinimoDeTempEnC" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMinimoDeTempEnC",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "PodzolHaplico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PodzolHaplico"
+    },
+    "LuvisolGleico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolGleico"
+    },
+    "Corine" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Corine"
+    },
+    "criterios" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#criterios"
+    },
+    "numeroDeCuencasHidrograficas" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#numeroDeCuencasHidrograficas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "ViaSinDesdoblarPrincipal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ViaSinDesdoblarPrincipal"
+    },
+    "PastizalYEspacioAbierto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PastizalYEspacioAbierto"
+    },
+    "Resinosa" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Resinosa"
+    },
+    "TemperaturaMinimaAbsoluta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#TemperaturaMinimaAbsoluta"
+    },
+    "AluvialYColuvial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AluvialYColuvial"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "perimetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#perimetro",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "VertisolCromico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#VertisolCromico"
+    },
+    "PrecipitacionMediaAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#PrecipitacionMediaAnual"
+    },
+    "IndiceRecogidaPapel" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceRecogidaPapel"
+    },
+    "FerrocarrilViaReducida" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#FerrocarrilViaReducida"
+    },
+    "DominioAgricolaDeRegadio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#DominioAgricolaDeRegadio"
+    },
+    "consumoEnergia2003EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2003EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ETPPrimavera" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ETPPrimavera"
+    },
+    "IndiceRecogidaVidrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceRecogidaVidrio"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Pendiente" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Pendiente"
+    },
+    "caracteristicaSituadaEnProvinciaConNombre" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#caracteristicaSituadaEnProvinciaConNombre"
+    },
+    "Granito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Granito"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "TemperaturaMinimaMediaAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#TemperaturaMinimaMediaAnual"
+    },
+    "ParqueNatural" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ParqueNatural"
+    },
+    "CaracteristicaBiogeografica" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CaracteristicaBiogeografica"
+    },
+    "consumoEnergia2007EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2007EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "AgroforestalMontado" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AgroforestalMontado"
+    },
+    "ValleCerrado" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ValleCerrado"
+    },
+    "ZonaArtificial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ZonaArtificial"
+    },
+    "IndiceContinentalidad" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceContinentalidad"
+    },
+    "ArboladoYMonteMediterraneo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ArboladoYMonteMediterraneo"
+    },
+    "AmplitudTermicaMediaAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AmplitudTermicaMediaAnual"
+    },
+    "Llanura" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Llanura"
+    },
+    "IndiceRecogidaSolidosUrbanosIndiferenciado" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceRecogidaSolidosUrbanosIndiferenciado"
+    },
+    "DominioAgricolaDeSecano" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#DominioAgricolaDeSecano"
+    },
+    "ViaSinDesdoblarSecundaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ViaSinDesdoblarSecundaria"
+    },
+    "VegetacionEscasa" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#VegetacionEscasa"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AreaProtegida" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AreaProtegida"
+    },
+    "CultivoTemporal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#CultivoTemporal"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "ArenosolHaplico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ArenosolHaplico"
+    },
+    "IndiceTermicidad" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#IndiceTermicidad"
+    },
+    "LeptosolEutrico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LeptosolEutrico"
+    },
+    "Caliza" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Caliza"
+    },
+    "ReservaNatural" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ReservaNatural"
+    },
+    "ETPOtono" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ETPOtono"
+    },
+    "valorMinimoEnMM" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#valorMinimoEnMM",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "VertisolPelico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#VertisolPelico"
+    },
+    "TemperaturaMaximaMediaAnual" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#TemperaturaMaximaMediaAnual"
+    },
+    "LuvisolCromico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#LuvisolCromico"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Pizarra" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#Pizarra"
+    },
+    "SuperficieArtificial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#SuperficieArtificial"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "consumoEnergia2006EnKwh" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#consumoEnergia2006EnKwh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "AcrisolGleico" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AcrisolGleico"
+    },
+    "ValleAplanado" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#ValleAplanado"
+    }
+  }
+}
