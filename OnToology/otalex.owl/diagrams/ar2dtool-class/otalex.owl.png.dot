@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "otalex:Suelo" "otalex:Caracteristica" ; /*classes style*/
+	"otalex:superficieM2" -> "http://geo.linkeddata.es/ontology/superficie" [ label = "rdfs:subPropertyOf" ];
+	"otalex:superficieHectareas" -> "http://geo.linkeddata.es/ontology/superficie" [ label = "rdfs:subPropertyOf" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2001EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:int" [ label = "otalex:valorMaximoEnMM" ];
+	"otalex:Caracteristica" -> "xsd:int" [ label = "otalex:valorMinimoEnMM" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:caracteristicaSituadaEnProvinciaConNombre" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:valorDeIndiceEnKgPorHab" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:valorMaximoDeTempEnC" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoAgua2009EnM3PorHab" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:valorMinimoDeTempEnC" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2007EnKwh" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:codigoMunicipio" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2004EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:int" [ label = "otalex:numeroDeCuencasHidrograficas" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:criterios" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:perimetro" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:publicadoEn" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:caracteristicaSituadaEnProvinciaConCodigo" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2005EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2003EnKwh" ];
+	"otalex:Suelo" -> "owl:Thing" [ label = "otalex:abreviacionSuelo" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:clasificacionCorine" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2008EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2010EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:superficieHectareas" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:superficieM2" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2009EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:valorMaximoDeIndice" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2002EnKwh" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:consumoEnergia2006EnKwh" ];
+	"otalex:Caracteristica" -> "owl:Thing" [ label = "otalex:codigoCaracteristica" ];
+	"otalex:Caracteristica" -> "xsd:double" [ label = "otalex:valorMinimoDeIndice" ];
+
+}
